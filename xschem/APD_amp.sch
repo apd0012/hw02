@@ -11,6 +11,11 @@ N -34 -104 -34 -34 {
 lab=VDD}
 N -98 -104 -58 -104 {
 lab=VDD}
+<<<<<<< HEAD
+=======
+N -58 -34 52 -34 {
+lab=VDD}
+>>>>>>> ec93631b1bfae8471aa45afa7a37b844abdda51b
 N -98 -4 -98 46 {
 lab=VSS}
 N -98 46 92 46 {
@@ -32,6 +37,7 @@ lab=VDD}
 N -8 -194 -8 -184 {
 lab=#net1}
 N 163 -215 251 -215 {
+<<<<<<< HEAD
 lab=#net2}
 N 162 -215 163 -215 {
 lab=#net2}
@@ -53,6 +59,29 @@ N -2 -111 162 -111 {
 lab=#net3}
 N 92 -111 92 -64 {
 lab=#net3}
+=======
+lab=diff_out}
+N 162 -215 163 -215 {
+lab=diff_out}
+N 162 -234 162 -215 {
+lab=diff_out}
+N 162 -215 162 -196 {
+lab=diff_out}
+N 162 -196 162 -184 {
+lab=diff_out}
+N 162 -124 162 -111 {
+lab=#net2}
+N -8 -111 -2 -111 {
+lab=#net2}
+N -8 -112 -8 -111 {
+lab=#net2}
+N -8 -124 -8 -112 {
+lab=#net2}
+N -2 -111 162 -111 {
+lab=#net2}
+N 92 -111 92 -64 {
+lab=#net2}
+>>>>>>> ec93631b1bfae8471aa45afa7a37b844abdda51b
 N 92 46 92 55 {
 lab=VSS}
 N -69 -154 -48 -154 {
@@ -61,6 +90,7 @@ N 202 -154 228 -154 {
 lab=in_n}
 N -58 -104 -34 -104 {
 lab=VDD}
+<<<<<<< HEAD
 N 92 46 312 46 {
 lab=VSS}
 N 312 -4 312 46 {
@@ -85,6 +115,8 @@ N 265 -83 265 -34 {
 lab=VDD}
 N 265 -34 272 -34 {
 lab=VDD}
+=======
+>>>>>>> ec93631b1bfae8471aa45afa7a37b844abdda51b
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 72 -34 0 0 {name=M3
 L=0.15
 W=1
@@ -143,7 +175,11 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8_lvt.sym} 182 -154 0 1 {name=M6
 L=0.15
+<<<<<<< HEAD
 W=3
+=======
+W=1
+>>>>>>> ec93631b1bfae8471aa45afa7a37b844abdda51b
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -157,7 +193,11 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8_lvt.sym} -28 -154 0 0 {name=M4
 L=0.15
+<<<<<<< HEAD
 W=3
+=======
+W=1
+>>>>>>> ec93631b1bfae8471aa45afa7a37b844abdda51b
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -183,6 +223,7 @@ C {devices/lab_pin.sym} -7 -264 0 0 {name=p13 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} -8 -344 0 0 {name=p14 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 162 -344 0 0 {name=p15 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 161 -264 0 1 {name=p17 sig_type=std_logic lab=VDD}
+<<<<<<< HEAD
 C {devices/lab_pin.sym} 401 -124 0 1 {name=p19 sig_type=std_logic lab=diff_out}
 C {devices/lab_pin.sym} 228 -154 0 1 {name=p20 sig_type=std_logic lab=in_n}
 C {devices/lab_pin.sym} -69 -154 0 0 {name=p21 sig_type=std_logic lab=in_p}
@@ -218,3 +259,9 @@ spiceprefix=X
 C {devices/lab_pin.sym} 312 -34 0 1 {name=p12 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 311 -215 0 1 {name=p16 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} 312 -282 0 1 {name=p18 sig_type=std_logic lab=VDD}
+=======
+C {devices/lab_pin.sym} 251 -215 0 1 {name=p19 sig_type=std_logic lab=diff_out}
+C {devices/lab_pin.sym} 228 -154 0 1 {name=p20 sig_type=std_logic lab=in_n}
+C {devices/lab_pin.sym} -69 -154 0 0 {name=p21 sig_type=std_logic lab=in_p}
+C {devices/iopin.sym} -182 -341 0 0 {name=p1 lab=VSS}
+>>>>>>> ec93631b1bfae8471aa45afa7a37b844abdda51b
