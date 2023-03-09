@@ -38,13 +38,8 @@ C {devices/lab_pin.sym} -240 60 0 0 {name=p1 sig_type=std_logic lab=VDD}
 C {devices/vsource.sym} -130 110 0 0 {name=V2 value=0}
 C {devices/gnd.sym} -130 160 0 0 {name=l2 lab=GND}
 C {devices/lab_pin.sym} -130 60 0 0 {name=p2 sig_type=std_logic lab=VSS}
-<<<<<<< HEAD
-C {devices/vsource.sym} 110 190 0 0 {name=V3 value="AC 1 SIN 0 0.5e-3 100k"}
-C {devices/vsource.sym} 110 90 0 0 {name=V4 value="AC 1 SIN 0 0.5e-3 100k"}
-=======
-C {devices/vsource.sym} 110 190 0 0 {name=V3 value="SIN 0 0.5e-3 10k"}
-C {devices/vsource.sym} 110 90 0 0 {name=V4 value="SIN 0 0.5e-3 10k"}
->>>>>>> ec93631b1bfae8471aa45afa7a37b844abdda51b
+C {devices/vsource.sym} 110 190 0 0 {name=V4 value="AC 1 SIN 0 0.5e-3 100k"}
+C {devices/vsource.sym} 110 90 0 0 {name=V3 value="AC 1 SIN 0 0.5e-3 100k"}
 C {devices/vsource.sym} -30 110 0 0 {name=V5 value=0.9}
 C {devices/gnd.sym} -30 160 0 0 {name=l4 lab=GND}
 C {devices/lab_pin.sym} -30 60 0 0 {name=p3 sig_type=std_logic lab=V_bias}
@@ -64,17 +59,12 @@ value="
 
 .control
 save all
-<<<<<<< HEAD
-*ac dec 20 1 1e12
 tran 0.1u 100u 0
-*plot db(diff_out) db(in_p-in_n)
 plot v(diff_out) v(in_p) v(in_n)
-=======
-ac dec 20 1 1e10
-* tran 0.1u 100u 0
-* plot diff_out in_p-in_n
 
->>>>>>> ec93631b1bfae8471aa45afa7a37b844abdda51b
+ac dec 20 1 1e12
+plot db(diff_out) db(in_p) db(in_n)
+
 * write amp_test.raw
 .endc
 "}
